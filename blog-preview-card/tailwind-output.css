@@ -2583,7 +2583,7 @@ video {
 @font-face {
   font-family: 'Figtree';
 
-  src: url('../blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf');
+  src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
 }
 
 @media (min-width: 640px) {
