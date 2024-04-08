@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="tailwind-output.css">
+
+  <title>Frontend Mentor | Social links profile</title>
+</head>
+<body class="font-['Inter'] font-normal flex justify-center items-center min-h-screen bg-[#141414] text-white text-sm">
+  <article class=" bg-[#1f1f1f] w-80 md:w-96 rounded-xl p-5 md:p-8">
+
+    <!--Profile Info-->
+    <section class="flex flex-col items-center justify-center gap-6 mb-6">
+      <figure class="flex flex-col items-center gap-6">
+        <img src="assets/images/avatar-jessica.jpeg" alt="Profile Picture" class="w-20 rounded-full">
+
+        <figcaption class="gap-3 text-center">
+          <h2 class="text-2xl font-bold"> Jessica Randall </h2>
+          <address class="mt-1 not-italic font-semibold text-primary-green"> London, United Kingdom  </address>
+        </figcaption>
+      </figure>
+      
+      <summary class="italic list-none">"Front-end developer and avid reader."</summary>
+    </section>
+    
+    <!--Social Links-->
+    <menu class="flex flex-col items-stretch gap-3">
+      <li class="btn-grey-to-green"><a href="github"> GitHub </a></li>
+      <li class="btn-grey-to-green"><a href="frontend-mentor"> Frontend Mentor  </a></li>
+      <li class="btn-grey-to-green"><a href="linked-in"> LinkedIn </a></li>
+      <li class="btn-grey-to-green"><a href="twitter"> Twitter </a></li>
+      <li class="btn-grey-to-green"><a href="instagram"> Instagram </a></li>
+    </menu>
+
+  </article>
+</body>
+</html>

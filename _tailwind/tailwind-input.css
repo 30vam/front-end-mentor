@@ -6,3 +6,18 @@
     font-family: 'Figtree';
     src: url('../blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf');
 }
+
+@layer components {
+    .btn-grey-to-green {
+        @apply text-center transition-colors duration-300 ease-in-out rounded-lg bg-[#333333];
+
+        &:hover {
+            @apply bg-primary-green text-[#141414];
+        }
+
+        /*Makes the link stretch to the entire button size if there is a link*/
+        a {
+            @apply block p-3 size-full;
+        }
+    }
+}
