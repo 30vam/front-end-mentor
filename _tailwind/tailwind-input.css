@@ -7,6 +7,28 @@
     src: url('../blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf');
 }
 
+@layer base {
+    ul {
+        @apply px-6 list-disc;
+    }
+
+    ol {
+        @apply px-6 list-decimal;
+    }
+
+    li {
+        @apply px-3 my-2;
+    }
+
+    li::marker {
+        @apply font-bold text-primary-nutmeg;
+    }
+
+    td {
+        @apply px-2 py-3 text-center;
+    }
+}
+
 @layer components {
     .btn-grey-to-green {
         @apply text-center transition-colors duration-300 ease-in-out rounded-lg bg-[#333333];
@@ -19,5 +41,13 @@
         a {
             @apply block p-3 size-full;
         }
+    }
+
+    .div-flexbox-col {
+        @apply flex flex-col gap-4 rounded-xl;
+    }
+
+    .section-title-nutmeg {
+        @apply mt-2 mb-4 text-3xl font-young-serif text-primary-nutmeg;
     }
 }
