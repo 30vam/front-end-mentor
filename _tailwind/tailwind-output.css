@@ -937,6 +937,10 @@ td {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -3046,6 +3050,10 @@ td {
 @media (min-width: 768px) {
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-\[528px\] {
+    height: 528px;
   }
 
   .md\:w-1\/2 {
