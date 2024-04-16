@@ -591,9 +591,9 @@ td {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 640px;
+    max-width: 576px;
   }
 }
 
@@ -798,10 +798,6 @@ td {
   margin: 1rem;
 }
 
-.m-6 {
-  margin: 1.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -937,16 +933,12 @@ td {
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
+.h-screen {
+  height: 100vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-11\/12 {
@@ -988,6 +980,10 @@ td {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[686px\] {
+  max-width: 686px;
 }
 
 .flex-shrink {
@@ -2170,6 +2166,10 @@ td {
   padding: 1.25rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -2197,6 +2197,11 @@ td {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-0 {
@@ -2297,17 +2302,16 @@ td {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
+.text-\[0\.875rem\] {
+  font-size: 0.875rem;
 }
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[2\.25rem\] {
+  font-size: 2.25rem;
 }
 
 .text-lg {
@@ -2428,6 +2432,10 @@ td {
 
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.leading-\[2\.25rem\] {
+  line-height: 2.25rem;
 }
 
 .-tracking-\[-0\.5em\] {
@@ -2900,14 +2908,14 @@ td {
   src: url('../blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf');
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 576px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 576px;
     }
   }
 
@@ -2980,7 +2988,7 @@ td {
   text-align: center;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 576px) {
   .sm\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -3018,24 +3026,16 @@ td {
     padding-top: 0px;
   }
 
-  .sm\:text-\[16px\] {
-    font-size: 16px;
+  .sm\:text-\[1\.125rem\] {
+    font-size: 1.125rem;
   }
 
-  .sm\:text-\[26px\] {
-    font-size: 26px;
+  .sm\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 
-  .sm\:text-\[20px\] {
-    font-size: 20px;
-  }
-
-  .sm\:text-\[48px\] {
-    font-size: 48px;
-  }
-
-  .sm\:text-\[18px\] {
-    font-size: 18px;
+  .sm\:leading-\[2\.5rem\] {
+    line-height: 2.5rem;
   }
 
   .sm\:underline {
@@ -3048,64 +3048,16 @@ td {
     height: 100%;
   }
 
-  .md\:h-\[60\%\] {
-    height: 60%;
-  }
-
-  .md\:max-h-\[450px\] {
-    max-height: 450px;
-  }
-
-  .md\:max-h-\[400px\] {
-    max-height: 400px;
-  }
-
-  .md\:max-h-\[60\%\] {
-    max-height: 60%;
-  }
-
-  .md\:max-h-\[70\%\] {
-    max-height: 70%;
-  }
-
-  .md\:min-h-\[300px\] {
-    min-height: 300px;
-  }
-
-  .md\:min-h-\[600px\] {
-    min-height: 600px;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-96 {
     width: 24rem;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[685px\] {
-    width: 685px;
-  }
-
-  .md\:min-w-\[600px\] {
-    min-width: 600px;
-  }
-
   .md\:min-w-\[610px\] {
     min-width: 610px;
-  }
-
-  .md\:max-w-\[50\%\] {
-    max-width: 50%;
-  }
-
-  .md\:max-w-\[685px\] {
-    max-width: 685px;
   }
 
   .md\:max-w-\[785px\] {
@@ -3116,64 +3068,42 @@ td {
     flex-direction: row;
   }
 
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:text-\[0\.875rem\] {
+    font-size: 0.875rem;
   }
 
   .md\:text-\[16px\] {
     font-size: 16px;
   }
 
-  .md\:text-\[24px\] {
-    font-size: 24px;
+  .md\:text-\[2\.25rem\] {
+    font-size: 2.25rem;
   }
 
-  .md\:text-\[32px\] {
-    font-size: 32px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-3xl {
-    font-size: 1.875rem;
+  .md\:leading-\[2\.25rem\] {
     line-height: 2.25rem;
-  }
-
-  .lg\:text-\[20px\] {
-    font-size: 20px;
   }
 }
 
 @media (min-width: 1280px) {
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .xl\:text-\[1\.125rem\] {
+    font-size: 1.125rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .xl\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .xl\:text-\[48px\] {
-    font-size: 48px;
-  }
-
-  .xl\:text-\[24px\] {
-    font-size: 24px;
-  }
-
-  .xl\:text-\[20px\] {
-    font-size: 20px;
-  }
-
-  .xl\:text-\[16px\] {
-    font-size: 16px;
+  .xl\:leading-\[2\.5rem\] {
+    line-height: 2.5rem;
   }
 }
 
