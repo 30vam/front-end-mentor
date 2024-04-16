@@ -3048,6 +3048,10 @@ td {
     height: 100%;
   }
 
+  .md\:h-\[60\%\] {
+    height: 60%;
+  }
+
   .md\:max-h-\[450px\] {
     max-height: 450px;
   }
